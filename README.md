@@ -8,7 +8,7 @@ End-to-end ELT pipeline on the modern data stack: NYC TLC taxi trip data → Sno
 
 | Path | Contents |
 |---|---|
-| `PROJECT_1_DBT_SNOWFLAKE 2.md` | Build spec: phases, acceptance criteria, stack decisions |
+| `PROJECT_1_DBT_SNOWFLAKE.md` | Build spec: phases, acceptance criteria, stack decisions |
 | `NOTES.md` | Learning notes taken while building |
 | `ingestion/load_taxi_data.py` | Loads monthly Parquet files into a Snowflake stage |
 | `tables.sql` | Raw table definitions |
