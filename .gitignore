@@ -1,0 +1,46 @@
+# ─── Secrets & credentials (NEVER commit) ───────────────────────────
+credentials.local.md
+*.local.md
+.env
+.env.*
+# keep the committed template (un-ignore it)
+!.env.example
+# real dbt profile — keep profiles.yml.example only
+profiles.yml
+**/profiles.yml
+
+# private keys (key-pair auth) — NEVER commit
+keys/
+*.p8
+*.pem
+*.pub
+
+# ─── Python ─────────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# ─── dbt ────────────────────────────────────────────────────────────
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# ─── Data files (large downloads — don't commit) ────────────────────
+*.parquet
+*.csv
+
+# ─── OS / editor ────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Personal Claude instructions (kept local)
+CLAUDE.md
